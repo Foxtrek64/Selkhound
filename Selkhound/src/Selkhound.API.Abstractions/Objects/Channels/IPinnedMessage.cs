@@ -44,7 +44,7 @@ namespace Selkhound.API.Abstractions.Objects
         Snowflake ChannelId { get; }
 
         /// <summary>
-        /// Gets the unique id of the club
+        /// Gets the unique id of the club.
         /// </summary>
         Snowflake ClubId { get; }
     }

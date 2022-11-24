@@ -5,13 +5,19 @@ VisualStudioVersion = 17.4.33103.184
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selkhound.API.Abstractions", "src\Selkhound.API.Abstractions\Selkhound.API.Abstractions.csproj", "{656626E6-C7AF-4F7B-BF2E-D046A94A9F7B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selkhound.Client", "src\Selkhound.Client\Selkhound.Client.csproj", "{226AE5F7-BD82-4EE9-B239-D40FCBCB21C5}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selkhound.Client", "src\Selkhound.Client\Selkhound.Client.csproj", "{226AE5F7-BD82-4EE9-B239-D40FCBCB21C5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selkhound.Client.Web.BackEnd", "src\Selkhound.Client.Web.BackEnd\Selkhound.Client.Web.BackEnd.csproj", "{97CD4AD9-CD3D-41B0-AE43-B576FDE4C210}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selkhound.Client.Web.BackEnd", "src\Selkhound.Client.Web.BackEnd\Selkhound.Client.Web.BackEnd.csproj", "{97CD4AD9-CD3D-41B0-AE43-B576FDE4C210}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selkhound.Client.Web", "src\Selkhound.Client.Web\Selkhound.Client.Web.csproj", "{632D4688-685F-4D72-A843-3AB3D37B4867}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selkhound.Client.Web", "src\Selkhound.Client.Web\Selkhound.Client.Web.csproj", "{632D4688-685F-4D72-A843-3AB3D37B4867}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selkhound.Server", "src\Selkhound.Server\Selkhound.Server.csproj", "{9BA8B23A-630C-45E5-94CA-3C62BF0A33EE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selkhound.Server", "src\Selkhound.Server\Selkhound.Server.csproj", "{9BA8B23A-630C-45E5-94CA-3C62BF0A33EE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{4326C4AA-B168-4CD1-A83F-70E6D734121C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selkhound.Common.Tests", "Tests\Selkhound.Common.Tests\Selkhound.Common.Tests.csproj", "{23B90B16-FD4B-4686-BE33-D4509293A98F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Selkhound.Common", "src\Selkhound.Common\Selkhound.Common.csproj", "{1FEDA308-479C-4AD1-B549-1B0E65289814}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -41,9 +47,20 @@ Global
 		{9BA8B23A-630C-45E5-94CA-3C62BF0A33EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9BA8B23A-630C-45E5-94CA-3C62BF0A33EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9BA8B23A-630C-45E5-94CA-3C62BF0A33EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23B90B16-FD4B-4686-BE33-D4509293A98F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23B90B16-FD4B-4686-BE33-D4509293A98F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23B90B16-FD4B-4686-BE33-D4509293A98F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23B90B16-FD4B-4686-BE33-D4509293A98F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1FEDA308-479C-4AD1-B549-1B0E65289814}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1FEDA308-479C-4AD1-B549-1B0E65289814}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1FEDA308-479C-4AD1-B549-1B0E65289814}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1FEDA308-479C-4AD1-B549-1B0E65289814}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{23B90B16-FD4B-4686-BE33-D4509293A98F} = {4326C4AA-B168-4CD1-A83F-70E6D734121C}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {05121C32-2FF8-4E12-B22C-E4B2C0CA2DD7}

@@ -42,10 +42,10 @@ namespace Selkhound.API.Abstractions.Objects
         /// <summary>
         /// Gets a list of explicit permission overwrites for members and roles.
         /// </summary>
-        IReadOnlyList<IPermissionOverwrite> PermissionOverwrites { get; }
+        // IReadOnlyList<IPermissionOverwrite> PermissionOverwrites { get; }
 
         /// <summary>
-        /// Gets the name of the channel
+        /// Gets the name of the channel.
         /// </summary>
         string? Name { get; }
 

@@ -1,5 +1,5 @@
 ﻿//
-//  App.xaml.cs
+//  Attributes.cs
 //
 //  Author:
 //       LuzFaltex Contributors
@@ -22,21 +22,6 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-namespace Selkhound.Client
-{
-    /// <summary>
-    /// The Application bootstrapper.
-    /// </summary>
-    public partial class App : Application
-    {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="App"/> class.
-        /// </summary>
-        public App()
-        {
-            InitializeComponent();
+using System.Runtime.CompilerServices;
 
-            MainPage = new MainPage();
-        }
-    }
-}
+[assembly: InternalsVisibleTo("Selkhound.Common.Tests")]

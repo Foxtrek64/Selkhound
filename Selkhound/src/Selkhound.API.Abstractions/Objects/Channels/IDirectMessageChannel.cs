@@ -32,7 +32,7 @@ namespace Selkhound.API.Abstractions.Objects
     public interface IDirectMessageChannel
     {
         /// <summary>
-        /// Represents a list of users who are members of the Direct Message channel.
+        /// Gets a list of users who are members of the Direct Message channel.
         /// </summary>
         public IReadOnlyList<IUser> Recipients { get; }
     }

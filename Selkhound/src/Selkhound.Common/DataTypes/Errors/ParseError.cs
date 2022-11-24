@@ -1,5 +1,5 @@
 ﻿//
-//  App.xaml.cs
+//  ParseError.cs
 //
 //  Author:
 //       LuzFaltex Contributors
@@ -22,21 +22,13 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
-namespace Selkhound.Client
+using Remora.Results;
+
+namespace Selkhound.Common.DataTypes.Errors
 {
     /// <summary>
-    /// The Application bootstrapper.
+    /// Represents an error caused by a failed parse.
     /// </summary>
-    public partial class App : Application
-    {
-        /// <summary>
-        /// Initializes a new instance of the <see cref="App"/> class.
-        /// </summary>
-        public App()
-        {
-            InitializeComponent();
-
-            MainPage = new MainPage();
-        }
-    }
+    /// <param name="Message">The reason why the parse failed.</param>
+    public sealed record class ParseError(string Message) : ResultError(Message);
 }

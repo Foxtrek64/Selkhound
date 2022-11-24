@@ -548,3 +548,7 @@ dotnet_diagnostic.SX1309.severity = error
 
 # Static field names must begin with underscore
 dotnet_diagnostic.SX1309S.severity = none
+
+[*.cshtml.cs]
+# PageModel class name conflict
+dotnet_diagnostic.SA1649.severity = none
