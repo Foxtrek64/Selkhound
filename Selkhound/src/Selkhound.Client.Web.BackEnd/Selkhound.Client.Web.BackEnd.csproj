@@ -12,7 +12,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Areas\MyFeature\Pages\" />
     <Folder Include="wwwroot\" />
     <Folder Include="Pages\Authentication\" />
   </ItemGroup>
@@ -21,7 +20,5 @@
     <PackageReference Include="Remora.Results" Version="7.2.3" />
     <PackageReference Include="Remora.Results.Analyzers" Version="1.0.0" />
   </ItemGroup>
-
-
 
 </Project>

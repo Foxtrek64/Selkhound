@@ -11,4 +11,8 @@
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.0" PrivateAssets="all" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Selkhound.Client.Web.BackEnd\Selkhound.Client.Web.BackEnd.csproj" />
+  </ItemGroup>
+
 </Project>
