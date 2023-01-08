@@ -56,6 +56,6 @@ namespace Selkhound.API.Abstractions.Objects
         /// <summary>
         /// Gets a list of voice channels contained in this category.
         /// </summary>
-        IReadOnlyList<IVoiceChannel> VoiceChannels { get; }
+        // IReadOnlyList<IVoiceChannel> VoiceChannels { get; }
     }
 }

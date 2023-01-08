@@ -102,12 +102,8 @@
 
   <!-- JetBrains -->
   <ItemGroup>
-<<<<<<< HEAD:Directory.Build.props
-    <PackageReference Include="JetBrains.Annotations" Version="2022.1.0" />
-=======
     <PackageReference Include="StyleCop.Analyzers" Version="1.2.0-beta.435" PrivateAssets="all" />
     <PackageReference Include="JetBrains.Annotations" Version="2022.3.1" />
->>>>>>> 3fe411e0fe526bfe654c018b3f168390f88f1a9f:src/Directory.Build.props
   </ItemGroup>
 
   <!-- SourceLink -->
