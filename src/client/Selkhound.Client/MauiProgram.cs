@@ -23,35 +23,35 @@
 //
 
 using Microsoft.Extensions.Logging;
-using Selkhound.Client.Data;
 
-namespace Selkhound.Client;
-
-/// <summary>
-/// The shared bootstrapper for the shared Maui app.
-/// </summary>
-public static class MauiProgram
+namespace Selkhound.Client
 {
     /// <summary>
-    /// Creates a new instance of <see cref="MauiApp"/>, bundling Blazor.
+    /// The shared bootstrapper for the shared Maui app.
     /// </summary>
-    /// <returns>A new instance of a Blazor <see cref="MauiApp"/>.</returns>
-    public static MauiApp CreateMauiApp()
+    public static class MauiProgram
     {
-        var builder = MauiApp.CreateBuilder();
-        builder
-            .UseMauiApp<App>()
-            .ConfigureFonts(fonts => { fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"); });
+        /// <summary>
+        /// Creates a new instance of <see cref="MauiApp"/>, bundling Blazor.
+        /// </summary>
+        /// <returns>A new instance of a Blazor <see cref="MauiApp"/>.</returns>
+        public static MauiApp CreateMauiApp()
+        {
+            var builder = MauiApp.CreateBuilder();
+            builder
+                .UseMauiApp<App>()
+                .ConfigureFonts(fonts => { fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"); });
 
-        builder.Services.AddMauiBlazorWebView();
+            builder.Services.AddMauiBlazorWebView();
 
 #if DEBUG
-        builder.Services.AddBlazorWebViewDeveloperTools();
-        builder.Logging.AddDebug();
+            builder.Services.AddBlazorWebViewDeveloperTools();
+            builder.Logging.AddDebug();
 #endif
 
-        builder.Services.AddSingleton<WeatherForecastService>();
+            // builder.Services.AddSingleton<WeatherForecastService>();
 
-        return builder.Build();
+            return builder.Build();
+        }
     }
 }

@@ -28,7 +28,7 @@ using UIKit;
 namespace Selkhound.Client;
 
 /// <summary>
-/// The main entroy point for iOS Applications.
+/// The main entry point for iOS Applications.
 /// </summary>
 public class Program
 {
