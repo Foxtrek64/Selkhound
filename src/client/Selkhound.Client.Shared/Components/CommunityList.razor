@@ -1,0 +1,14 @@
+﻿<div class="community-list">
+    @foreach (var community in Communities)
+    {
+        <a href="@community.Url">@community</a>
+    }
+</div>
+
+@code {
+    /// <summary>
+    /// 
+    /// </summary>
+    [Parameter]
+    public required IReadOnlyList<CommunityEntry> Communities { get; init; }
+}

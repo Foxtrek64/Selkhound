@@ -22,7 +22,9 @@
 //  along with this program.  If not, see <http://www.gnu.org/licenses/>.
 //
 
+using Grpc.Core;
 using Microsoft.Extensions.Logging;
+using Selkhound.Client.Shared.Services;
 
 namespace Selkhound.Client
 {
@@ -43,6 +45,22 @@ namespace Selkhound.Client
                 .ConfigureFonts(fonts => { fonts.AddFont("OpenSans-Regular.ttf", "OpenSansRegular"); });
 
             builder.Services.AddMauiBlazorWebView();
+
+            builder.Services
+                   .AddGrpcClient<SelkhoundClient>
+                   (
+                       o =>
+                       {
+                           o.Address = new Uri("https://dev.selkhound.com");
+                       }
+                   )
+                   .AddCallCredentials(
+                       async (context, metadata, serviceProvider) =>
+                       {
+                           var provider = serviceProvider.GetRequiredService<ITokenProvider>();
+                           var token = await provider.GetTokenAsync();
+                           metadata.Add("Authorization", $"Bearer {token}");
+                       });
 
 #if DEBUG
             builder.Services.AddBlazorWebViewDeveloperTools();
