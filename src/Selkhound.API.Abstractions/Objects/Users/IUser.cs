@@ -50,10 +50,5 @@ namespace Selkhound.API.Abstractions.Objects
         /// Gets the user's avatar hash.
         /// </summary>
         IImageHash? Avatar { get; }
-
-        /// <summary>
-        /// Gets the user's email address.
-        /// </summary>
-        Verified<string>? Email { get; }
     }
 }

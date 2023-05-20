@@ -1,6 +1,6 @@
 <Project>
     <!-- Import outer build properties -->
-    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../'))" />
+    <Import Project="$([MSBuild]::GetPathOfFileAbove('Directory.Build.props', '$(MSBuildThisFileDirectory)../src/'))" />
 
     <PropertyGroup>
         <IsPackable>false</IsPackable>

@@ -548,14 +548,3 @@ dotnet_diagnostic.SX1309.severity = error
 
 # Static field names must begin with underscore
 dotnet_diagnostic.SX1309S.severity = none
-
-# Naming Rules
-dotnet_naming_rule.async_method_should_be_ends_with_async.severity = suggestion
-dotnet_naming_rule.async_method_should_be_ends_with_async.symbols = async_method
-dotnet_naming_rule.async_method_should_be_ends_with_async.style = ends_with_async
-
-# Naming Styles
-dotnet_naming_style.ends_with_async.required_prefix = 
-dotnet_naming_style.ends_with_async.required_suffix = Async
-dotnet_naming_style.ends_with_async.word_separator = 
-dotnet_naming_style.ends_with_async.capitalization = pascal_case

@@ -41,5 +41,10 @@ namespace Selkhound.API.Abstractions.Objects
         /// Gets the user's profile information.
         /// </summary>
         IUserProfile UserProfile { get; }
+
+        /// <summary>
+        /// Gets the user's email address.
+        /// </summary>
+        Verified<string>? Email { get; }
     }
 }
